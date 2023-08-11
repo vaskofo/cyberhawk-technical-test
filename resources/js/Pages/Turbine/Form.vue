@@ -25,31 +25,46 @@ const submit = () => {
     <form @submit.prevent="submit">
         <div class="flex flex-col gap-5">
             <div class="flex flex-col sm:w-full lg:w-1/2 xl:w-1/4">
-                <TextInput label="Name" placeholder="Turbine #32-A" id="name" v-model="formData.name"
+                <TextInput label="Name"
+                           placeholder="Turbine #32-A"
+                           id="name"
+                           v-model="formData.name"
                            :error="formData.errors.name"></TextInput>
             </div>
 
             <div class="flex flex-col sm:w-full lg:w-1/2 xl:w-1/4">
                 <span>Blade Grade: <b>{{ formData.blade_grade }}</b></span>
-                <input type="range" v-model="formData.blade_grade" min="1" max="5"
+                <input type="range"
+                       v-model="formData.blade_grade"
+                       min="1"
+                       max="5"
                        class="border-1 border-gray-200 rounded-lg">
             </div>
 
             <div class="flex flex-col sm:w-full lg:w-1/2 xl:w-1/4">
                 <span>Rotor Grade: <b>{{ formData.rotor_grade }}</b></span>
-                <input type="range" v-model="formData.rotor_grade" min="1" max="5"
+                <input type="range"
+                       v-model="formData.rotor_grade"
+                       min="1"
+                       max="5"
                        class="border-1 border-gray-200 rounded-lg">
             </div>
 
             <div class="flex flex-col sm:w-full lg:w-1/2 xl:w-1/4">
                 <span>Hub Grade: <b>{{ formData.hub_grade }}</b></span>
-                <input type="range" v-model="formData.hub_grade" min="1" max="5"
+                <input type="range"
+                       v-model="formData.hub_grade"
+                       min="1"
+                       max="5"
                        class="border-1 border-gray-200 rounded-lg">
             </div>
 
             <div class="flex flex-col sm:w-full lg:w-1/2 xl:w-1/4">
                 <span>Generator Grade: <b>{{ formData.generator_grade }}</b></span>
-                <input type="range" v-model="formData.generator_grade" min="1" max="5"
+                <input type="range"
+                       v-model="formData.generator_grade"
+                       min="1"
+                       max="5"
                        class="border-1 border-gray-200 rounded-lg">
             </div>
 

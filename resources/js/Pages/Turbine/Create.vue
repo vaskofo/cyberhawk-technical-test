@@ -1,7 +1,7 @@
 <script setup>
-import Form from "@/Pages/Turbine/Form.vue";
-import Layout from "@/Layouts/Layout.vue";
-import {Link} from "@inertiajs/vue3";
+import { Link } from '@inertiajs/vue3';
+import Form from '@/Pages/Turbine/Form.vue';
+import Layout from '@/Layouts/Layout.vue';
 </script>
 
 <template>

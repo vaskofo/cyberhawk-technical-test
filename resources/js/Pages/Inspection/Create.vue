@@ -1,7 +1,6 @@
 <script setup>
 import { useForm } from '@inertiajs/vue3';
 import Layout from '@/Layouts/Layout.vue';
-import Form from "@/Pages/Turbine/Form.vue";
 
 const props = defineProps({
   turbine: Object,

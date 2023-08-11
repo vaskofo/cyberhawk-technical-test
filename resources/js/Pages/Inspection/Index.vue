@@ -1,9 +1,9 @@
 <script setup>
-import { router } from '@inertiajs/vue3';
 import { ref } from 'vue';
+import { DateTime } from 'luxon';
+import { Link } from '@inertiajs/vue3';
 import Layout from '@/Layouts/Layout.vue';
-import {DateTime} from "luxon";
-import {Link} from "@inertiajs/vue3";
+
 const props = defineProps({
   inspections: Object,
 });
