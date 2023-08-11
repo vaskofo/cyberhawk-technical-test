@@ -5,3 +5,70 @@
 [x-cloak] {
     display: none;
 }
+
+/*Make page always occupy all screen*/
+html, body, div#app {
+    height: 100%;
+}
+
+input::placeholder {
+    @apply text-gray-300;
+}
+
+.required::after {
+    content: "*";
+    @apply text-red-500;
+}
+
+/*Breadcrumbs with an arrow divinding elements*/
+.breadcrumb {
+    @apply flex items-center;
+}
+
+.breadcrumb a {
+    @apply text-gray-500;
+}
+
+.breadcrumb a:hover {
+    @apply text-gray-700;
+}
+
+.breadcrumb a::after {
+    content: ">";
+    @apply mx-2;
+}
+
+.breadcrumb a:last-child::after {
+    content: "";
+}
+
+
+.table-card {
+    -webkit-border-vertical-spacing: 1rem;
+    -webkit-border-horizontal-spacing: 0;
+    border-collapse: separate;
+}
+
+.table-card > thead > tr > th:first-child {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.table-card > thead > tr > th:last-child {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}
+
+.table-card > tbody > tr > td {
+    @apply bg-white mb-8 p-4;
+}
+
+.table-card > tbody > tr > td:first-child {
+    border-top-left-radius: 0.5rem;
+    border-bottom-left-radius: 0.5rem;
+}
+
+.table-card > tbody > tr > td:last-child {
+    border-top-right-radius: 0.5rem;
+    border-bottom-right-radius: 0.5rem;
+}

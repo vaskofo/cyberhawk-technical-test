@@ -36,8 +36,19 @@ class HandleInertiaRequests extends Middleware
      */
     public function share(Request $request): array
     {
+//        dd($request->all(), $request->session(), $request->toArray());
         return array_merge(parent::share($request), [
-            //
+            'toast' => function () use ($request) {
+                if(! $request->session()->get('toast_message')) {
+                    return [];
+                }
+
+                return [
+                    'message' => $request->session()->get('toast_message'),
+                    'type' => $request->session()->get('toast_type', 'success'),
+                    'ts' => now()->timestamp,
+                ];
+            },
         ]);
     }
 }
